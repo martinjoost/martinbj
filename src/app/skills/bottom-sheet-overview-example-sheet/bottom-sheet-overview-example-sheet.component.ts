@@ -8,40 +8,40 @@ import { Component, OnInit } from '@angular/core';
 export class BottomSheetOverviewExampleSheetComponent implements OnInit {
 
 
-  versions:any = [
+  versions: any = [
     {
-      name:'angular 2',
-      href:'https://angular.io',
+      name: 'angular 2',
+      href: 'https://angular.io',
     },
     {
-      name:'angular 4',
-      href:'https://angular.io',
+      name: 'angular 4',
+      href: 'https://angular.io',
     },
     {
-      name:'angular 5',
-      href:'https://angular.io',
+      name: 'angular 5',
+      href: 'https://angular.io',
     },
     {
-      name:'angular 6',
-      href:'https://angular.io',
+      name: 'angular 6',
+      href: 'https://angular.io',
     },
     {
-      name:'angular 7',
-      href:'https://angular.io',
+      name: 'angular 7',
+      href: 'https://angular.io',
     },
     {
-      name:'angular 8',
-      href:'https://angular.io',
+      name: 'angular 8',
+      href: 'https://angular.io',
     },
     {
-      name:'angular 9',
-      href:'https://angular.io',
+      name: 'angular 9',
+      href: 'https://angular.io',
     },
     {
-      name:'angularjs',
-      href:'https://angularjs.org',
+      name: 'angularjs',
+      href: 'https://angularjs.org',
     },
-  ]
+  ];
 
   constructor() { }
 
