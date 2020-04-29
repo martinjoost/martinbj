@@ -1,0 +1,50 @@
+<div class="container animated fadeInRight" fxLayout="row" fxLayoutAlign="center none">
+  <div class="container__card" fxFlex="70%">
+
+    <mat-card *ngFor="let job of jobs" class="card">
+      <mat-card-header>
+        <div class="card__header">
+          <div>
+            <mat-card-title>{{job.name}}</mat-card-title>
+            <mat-card-subtitle>{{job.position}}</mat-card-subtitle>
+          </div>
+          <div style="text-align:right">
+            <div *ngIf="job.remote">
+              <span class="material-icons">
+               <label>home</label>
+              </span>
+              <div><span>{{job.location}}</span></div>
+            </div>
+            <div *ngIf="!job.remote">
+              <div>
+                <a [href]="job.locationUrl" target="_blank" mat-stroked-button color="primary">
+                  <span class="location__name">{{job.location}}</span>
+                  <span class="material-icons">location_on</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-card-header>
+      <img mat-card-image src="{{job.url}}" alt="">
+      <mat-card-content>
+        <div class="card__body">
+          <p>
+            {{job.description}}
+          </p>
+        </div>
+        <div class="card__footer" *ngIf="job.implementations != ''">
+          <mat-divider></mat-divider>
+          <br>
+          <div class="footer_implementations" *ngFor="let implementation of job.implementations">
+            <div>
+              <button mat-raised-button>{{implementation | uppercase}}</button>
+            </div>
+          </div>
+
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>

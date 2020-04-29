@@ -1,0 +1,36 @@
+.card{
+    margin-bottom: 1em;
+
+
+
+    
+}
+@media screen and (max-width: 1100px) {
+    .container__card{
+        max-width: 95% !important;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .location__name{
+        display: none;
+    }
+  }
+.card__header{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+.card__body{
+    text-align: justify;
+}
+.card__footer{
+    text-align: center;
+}
+.footer_implementations{
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+}
+button{
+    color:#4527a0;
+}
