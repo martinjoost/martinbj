@@ -161,6 +161,11 @@ export class SkillsComponent implements OnInit {
       url: '../../../assets/images/reactjs.png',
     },
     {
+      name: 'Ionic',
+      href: 'https://ionicframework.com/',
+      url: '../../../assets/images/ionic.png',
+    },
+    {
       name: 'vuejs',
       href: 'https://vuejs.org/',
       url: '../../../assets/images/vue.png',
