@@ -27,6 +27,7 @@ export class ExperienciesComponent implements OnInit {
       locationUrl:  'https://www.google.com/maps/place/Edificio+Ejercito+Bicentenario/@-33.4566079,-70.6609026,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c53b8dce2a25: 0xb60df989bd9e2314!8m2!3d-33.4566079!4d-70.6587139',
       location: 'Edificio Ejército bicentenario',
       position: 'Frontend Developer',
+      // tslint:disable-next-line: max-line-length
       implementations:  ['AngularJS', 'VB.NET', 'HighCharts.js', 'Oracle DB', 'Soporte técnico presencial', 'Reportes', 'Mantención Sistema', 'Procedimientos Almacenados', 'Exposición de prototipos funcionales'],
       description: 'Mantención del sistema, manipulación de información confidencial. Creación de procedimientos y tablas almacenadas en Oracle DB. Desarrollo de herramientas innovadoras para el sistema WebApp de Hoja de Vida Digital del ejército, creada con AngularJS, Visual Basic, y Oracle DB. Este sistema va dirigido hacia todo personal militar registrados vigentes e históricos de Chile, por consecuencia manipulando datos confidenciales.',
       url: '../../../assets/images/ejercito.jpg',
