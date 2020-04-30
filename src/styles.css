@@ -2,7 +2,12 @@
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 14px;
+}
+.text_medium{
+  font-size:1.5em;
+}
+.text_light{
+  font-weight:100;
 }
 
 .full-width {
@@ -36,11 +41,6 @@ body {
 
 .login-actions {
   margin-left: unset !important;
-}
-
-.mat-list-item,
-.mat-menu-item {
-  font-size: 14px !important;
 }
 
 .command-wrapper button {
@@ -104,10 +104,6 @@ p .mat-icon {
 .mat-slide-toggle.full-width {
   margin-top: 15px;
   margin-bottom: 15px;
-}
-
-.mat-tooltip {
-  font-size: 14px;
 }
 
 .fixed-fab {
