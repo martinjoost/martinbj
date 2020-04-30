@@ -1,11 +1,16 @@
 .navbar-spacer {
   flex: 1 1 auto;
 }
-
+.sidenav-content{
+  background-color: white;
+}
+.sidenav mat-nav-list mat-icon{
+  color: #293d9b;
+}
 .navbar {
   z-index: 2;
-  background: #4527A0;
-  color: white;
+  background: white;
+  color: black;
 }
 
 .navbar-brand {
@@ -70,7 +75,5 @@ mat-menu{
 }
 .navbar__txtright{
   font-weight: 100;
-}
-.link__contact{
-  color:#4527A0;
+  color: #59c6a7;
 }
