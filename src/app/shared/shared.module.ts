@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { CustomMaterialModule } from '../custom-material/custom-material.module';
 import { LayoutComponent } from './layout/layout.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   imports: [
@@ -15,13 +16,15 @@ import { LayoutComponent } from './layout/layout.component';
     FlexLayoutModule,
   ],
   declarations: [
-    LayoutComponent
+    LayoutComponent,
+    ErrorComponent
   ],
   exports: [
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
     CustomMaterialModule,
+    ErrorComponent
   ],
   entryComponents: [
   ]

@@ -1,7 +1,6 @@
 <div class="container animated fadeInLeft" fxLayout="row" fxLayoutAlign="center none">
   <div fxFlex="95%">
-
-    <mat-card class="card">
+    <mat-card *ngIf="!error" class="card">
       <mat-card-content class="card__content" style="text-align: center;">
         <i class="fas fa-hand-holding-heart"></i>
         <div>
@@ -9,65 +8,56 @@
         </div>
         <br>
         <br>
-        <mat-tab-group mat-align-tabs="center">
+        <div *ngIf="loading"  align="center">
+          <mat-spinner class="text-center" diameter="40"></mat-spinner>
+        </div>
+        <mat-tab-group *ngIf="!loading" mat-align-tabs="center">
           <mat-tab label="Lenguajes">
             <mat-list>
               <mat-list-item *ngFor="let language of languages" mat-list-item>
-                <img 
-                matListIcon  
-                title="{{language.name | uppercase}}" 
-                class="otherlibs__img" 
-                [src]="language.url">
-                <a *ngIf="language.href" target="_blank" [href]="language.href" mat-line mat-flat-button > 
-                  {{language.name | uppercase}} 
+                <img matListIcon title="{{language.name | uppercase}}" class="otherlibs__img" [src]="language.url">
+                <a *ngIf="language.href" target="_blank" [href]="language.href" mat-line mat-flat-button>
+                  {{language.name | uppercase}}
                 </a>
-                <a *ngIf="!language.href" href="javascript:void(0);" mat-line mat-flat-button > 
-                  {{language.name | uppercase}} 
+                <a *ngIf="!language.href" href="javascript:void(0);" mat-line mat-flat-button>
+                  {{language.name | uppercase}}
                 </a>
                 <i class="fas fa-globe" *ngIf="language.href"></i>
               </mat-list-item>
             </mat-list>
           </mat-tab>
-          <mat-tab label="Frameworks"> 
+          <mat-tab label="Frameworks">
             <mat-list>
               <mat-list-item *ngFor="let framework of frameworks" mat-list-item>
-                <img 
-                matListIcon  
-                title="{{framework.name | uppercase}}" 
-                class="otherlibs__img" 
-                [src]="framework.url">
-                <a *ngIf="framework.versions" target="_blank" (click)="openBottomSheet()" mat-line mat-flat-button > 
-                  {{framework.name | uppercase}} 
+                <img matListIcon title="{{framework.name | uppercase}}" class="otherlibs__img" [src]="framework.url">
+                <a *ngIf="framework.versions" target="_blank" (click)="openBottomSheet()" mat-line mat-flat-button>
+                  {{framework.name | uppercase}}
                 </a>
-                <a *ngIf="!framework.versions" target="_blank" [href]="framework.href" mat-line mat-flat-button > 
-                  {{framework.name | uppercase}} 
+                <a *ngIf="!framework.versions" target="_blank" [href]="framework.href" mat-line mat-flat-button>
+                  {{framework.name | uppercase}}
                 </a>
                 <span *ngIf="framework.versions" class="material-icons">extension</span>
                 <i class="fas fa-globe" *ngIf="framework.href"></i>
               </mat-list-item>
             </mat-list>
           </mat-tab>
-          <mat-tab label="Otras tecnologías"> 
+          <mat-tab label="Otras tecnologías">
             <mat-list>
               <mat-list-item *ngFor="let lib of othersLibs" mat-list-item>
-                <img 
-                matListIcon  
-                title="{{lib.name | uppercase}}" 
-                class="otherlibs__img" 
-                [src]="lib.url">
-                <a *ngIf="lib.href" target="_blank" [href]="lib.href" mat-line mat-flat-button > 
-                  {{lib.name | uppercase}} 
+                <img matListIcon title="{{lib.name | uppercase}}" class="otherlibs__img" [src]="lib.url">
+                <a *ngIf="lib.href" target="_blank" [href]="lib.href" mat-line mat-flat-button>
+                  {{lib.name | uppercase}}
                 </a>
-                <a *ngIf="!lib.href" href="javascript:void(0);" mat-line mat-flat-button > 
-                  {{lib.name | uppercase}} 
+                <a *ngIf="!lib.href" href="javascript:void(0);" mat-line mat-flat-button>
+                  {{lib.name | uppercase}}
                 </a>
                 <i class="fas fa-globe" *ngIf="lib.href"></i>
               </mat-list-item>
-            </mat-list>  
+            </mat-list>
           </mat-tab>
         </mat-tab-group>
       </mat-card-content>
     </mat-card>
-
+    <app-error *ngIf="error && !loading"></app-error>
   </div>
 </div>

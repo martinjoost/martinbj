@@ -1,6 +1,5 @@
 <div class="container animated fadeInRight" fxLayout="row" fxLayoutAlign="center none">
   <div class="container__card" fxFlex="70%">
-
     <mat-card *ngFor="let job of jobs" class="card">
       <mat-card-header>
         <div class="card__header">
@@ -49,6 +48,9 @@
         </div>
       </mat-card-content>
     </mat-card>
-
+    <div *ngIf="loading" align="center">
+      <mat-spinner class="text-center" diameter="40"></mat-spinner>
+    </div>
   </div>
+  <app-error *ngIf="error && !loading"></app-error>
 </div>

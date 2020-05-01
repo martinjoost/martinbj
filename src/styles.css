@@ -3,6 +3,9 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+.error img{
+  width: 40px;
+}
 .text_medium{
   font-size:1.5em;
 }
