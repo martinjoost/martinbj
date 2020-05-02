@@ -32,18 +32,21 @@
       <img mat-card-image src="{{job.url}}" alt="">
       <mat-card-content>
         <div class="card__body">
-          <p>
-            {{job.description}}
-          </p>
+          <div class="body__description">
+            <p>
+              {{job.description}}
+            </p>
+          </div>
         </div>
         <div class="card__footer" *ngIf="job.implementations != ''">
           <mat-divider></mat-divider>
           <br>
           <div class="footer_implementations" *ngFor="let implementation of job.implementations">
             <div>
-              <button mat-raised-button>{{implementation | uppercase}}</button>
+              <button (click)="openSkill()" mat-raised-button>{{implementation | uppercase}}</button>
             </div>
           </div>
+
         </div>
       </mat-card-content>
     </mat-card>

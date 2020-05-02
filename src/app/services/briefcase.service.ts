@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 })
 export class BriefcaseService {
 
-  apiUrl =  environment.apiUrl;
+  apiUrl: string =  environment.apiUrl;
   constructor(private http: HttpClient) {}
 
 

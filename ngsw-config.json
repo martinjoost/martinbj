@@ -12,6 +12,12 @@
           "/manifest.webmanifest",
           "/*.css",
           "/*.js"
+        ],
+        "urls": [
+          "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css",
+          "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700",
+          "https://fonts.googleapis.com/icon?family=Material+Icons",
+          "https://my-project-1585429394874.firebaseio.com/data/**"
         ]
       }
     }, {
@@ -24,6 +30,20 @@
           "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ]
       }
+    }
+  ],
+  "dataGroups": [
+    {
+     "name": "api",
+     "urls": [
+       "https://my-project-1585429394874.firebaseio.com/data/**"
+     ],
+     "cacheConfig": {
+       "maxSize": 20,
+       "maxAge": "1h",
+       "timeout": "5s",
+       "strategy": "freshness"
+     }
     }
   ]
 }

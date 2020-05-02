@@ -6,11 +6,6 @@
         <div>
           <span class="text_medium">Tecnologías aplicadas a lo largo de mi vida</span>
         </div>
-        <br>
-        <br>
-        <div *ngIf="loading"  align="center">
-          <mat-spinner class="text-center" diameter="40"></mat-spinner>
-        </div>
         <mat-tab-group *ngIf="!loading" mat-align-tabs="center">
           <mat-tab label="Lenguajes">
             <mat-list>
@@ -58,6 +53,9 @@
         </mat-tab-group>
       </mat-card-content>
     </mat-card>
+    <div *ngIf="loading" align="center">
+      <mat-spinner class="text-center" diameter="40"></mat-spinner>
+    </div>
     <app-error *ngIf="error && !loading"></app-error>
   </div>
 </div>

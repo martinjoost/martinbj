@@ -1,9 +1,5 @@
 .card{
     margin-bottom: 1em;
-
-
-
-    
 }
 @media screen and (max-width: 1100px) {
     .container__card{
@@ -20,11 +16,12 @@
     grid-template-columns: 50% 50%;
     width: 100%;
 }
-.card__body{
-    text-align: justify;
-}
 .card__footer{
     text-align: center;
+}
+.body__description p{
+    text-align: justify;
+    line-height: 1.4;
 }
 .footer_implementations{
     display: inline-block;

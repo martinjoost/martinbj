@@ -39,6 +39,11 @@
 .banner__title{
   font-size: 3em;
 }
+
+.banner__title button{
+  color:#59c6a7;
+}
+
 @media screen and (max-width: 700px) {
   .banner__title{
     font-size: 2em

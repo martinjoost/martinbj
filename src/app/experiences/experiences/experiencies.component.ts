@@ -33,4 +33,7 @@ export class ExperienciesComponent implements OnInit {
     });
     this.titleService.setTitle('Experiencias');
   }
+  openSkill(): void {
+    
+  }
 }
