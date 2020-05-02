@@ -36,6 +36,10 @@
   cursor: pointer;
 }
 
+.banner__text p{
+  color:#59c6a7;
+}
+
 .banner__title{
   font-size: 3em;
 }
