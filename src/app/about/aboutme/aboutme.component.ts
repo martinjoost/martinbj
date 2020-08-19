@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Component, OnInit } from "@angular/core";
+import { Title } from "@angular/platform-browser";
 
 export interface Tile {
   color: string;
@@ -9,15 +9,16 @@ export interface Tile {
 }
 
 @Component({
-  selector: 'app-aboutme',
-  templateUrl: './aboutme.component.html',
-  styleUrls: ['./aboutme.component.css']
+  selector: "app-aboutme",
+  templateUrl: "./aboutme.component.html",
+  styleUrls: ["./aboutme.component.scss"],
 })
 export class AboutmeComponent implements OnInit {
-  constructor(private titleService: Title) {
-  }
+  constructor(private titleService: Title) {}
 
   ngOnInit() {
-    this.titleService.setTitle('Sobre mí');
+    this.titleService.setTitle("Sobre mí");
   }
+
+  changeImg() {}
 }

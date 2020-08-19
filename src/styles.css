@@ -3,14 +3,14 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-.error img{
+.error img {
   width: 40px;
 }
-.text_medium{
-  font-size:1.5em;
+.text_medium {
+  font-size: 1.5em;
 }
-.text_light{
-  font-weight:100;
+.text_light {
+  font-weight: 100;
 }
 
 .full-width {
@@ -31,7 +31,6 @@ body {
 
 .text-center {
   text-align: center;
-  
 }
 
 .text-right {
@@ -146,15 +145,33 @@ p .mat-icon {
   }
 }
 
-.fa-html5{
-  color:#de4b25;
+.fa-html5 {
+  color: #de4b25;
 }
-.fa-css3{
+.fa-css3 {
   color: #2a97c5;
 }
-.fa-js{
+.fa-js {
   color: #e7ba23;
 }
-.fa-react{
-  color:#61dbfb;
+.fa-react {
+  color: #61dbfb;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #293d9b;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #59c6a7;
 }

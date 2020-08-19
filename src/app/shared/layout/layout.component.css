@@ -1,10 +1,10 @@
 .navbar-spacer {
   flex: 1 1 auto;
 }
-.sidenav-content{
+.sidenav-content {
   background-color: white;
 }
-.sidenav mat-nav-list mat-icon{
+.sidenav mat-nav-list mat-icon {
   color: #293d9b;
 }
 .navbar {
@@ -52,10 +52,13 @@
 mat-sidenav {
   min-width: 180px !important;
   border-right: 1px solid #eee;
-  box-shadow: 6px 0 6px rgba(0, 0, 0, .1);
+  box-shadow: 6px 0 6px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
   /* background-color:rgb(63, 81, 181); */
 }
-
+mat-sidenav-content {
+  overflow-x: hidden;
+}
 /* Set height of wrapper to stop content from moving up & down */
 
 .progress-bar-container {
@@ -63,17 +66,17 @@ mat-sidenav {
 }
 
 a.mat-list-item.active {
-  background: rgba(0, 0, 0, .04);
+  background: rgba(0, 0, 0, 0.04);
 }
 
 #push-bottom {
   position: absolute;
   bottom: 0;
 }
-mat-menu{
+mat-menu {
   padding: 0px;
 }
-.navbar__txtright{
+.navbar__txtright {
   font-weight: 100;
   color: #59c6a7;
 }
