@@ -1,44 +1,56 @@
 <div class="navbar-container" [class.example-is-mobile]="mobileQuery.matches">
-
   <!-- Top navbar -->
   <mat-toolbar class="navbar">
-
     <button mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
 
     <a class="navbar-brand" [routerLink]="['home']" matTooltip="Inicio">
-      <img style="width:40px" src="../../../assets/images/m.png" alt="" srcset="">
+      <img
+        style="width: 40px;"
+        src="../../../assets/images/m.png"
+        alt=""
+        srcset=""
+      />
     </a>
     <span class="navbar-spacer"></span>
 
     <span class="navbar-spacer"></span>
-    <span class="navbar__txtright" >#QuédateEnCasa</span>
-  
+    <span class="navbar__txtright">#QuédateEnCasa</span>
   </mat-toolbar>
   <mat-sidenav-container class="navbar-sidenav-container">
     <!-- Side nav -->
-    <mat-sidenav #snav [opened]="!mobileQuery.matches" [mode]="mobileQuery.matches ? 'over' : 'side'"
-      [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" class="sidenav">
+    <mat-sidenav
+      #snav
+      [opened]="!mobileQuery.matches"
+      [mode]="mobileQuery.matches ? 'over' : 'side'"
+      [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="56"
+      class="sidenav"
+    >
       <mat-nav-list>
         <h3 mat-subheader>Home</h3>
         <a mat-list-item [routerLink]="['/aboutme']" routerLinkActive="active">
           <mat-icon mat-list-icon>
             favorite
           </mat-icon>
-          <p mat-line> Sobre Mí </p>
+          <p mat-line>Sobre Mí</p>
         </a>
         <a mat-list-item [routerLink]="['/skills']" routerLinkActive="active">
           <mat-icon mat-list-icon>
             gamepad
           </mat-icon>
-          <p mat-line> Habilidaddes </p>
+          <p mat-line>Habilidaddes</p>
         </a>
-        <a mat-list-item [routerLink]="['/experiences']" routerLinkActive="active">
+        <a
+          mat-list-item
+          [routerLink]="['/experiences']"
+          routerLinkActive="active"
+        >
           <mat-icon mat-list-icon>
             work
           </mat-icon>
-          <p mat-line> Experiencias </p>
+          <p mat-line>Experiencias</p>
         </a>
         <!-- <a mat-list-item [routerLink]="['/account/profile']">
           <mat-icon mat-list-icon>person</mat-icon>
@@ -51,26 +63,37 @@
         </a> -->
         <mat-divider></mat-divider>
         <h3 mat-subheader>Encuéntrame en</h3>
-        <a mat-list-item href="https://github.com/martinjoost" target="_blank">
+        <a
+          mat-list-item
+          href="https://github.com/martinbarriaweb"
+          target="_blank"
+        >
           <i class="fab fa-github"></i>
-          <p mat-line> Github </p>
+          <p mat-line>Github</p>
         </a>
-        <a mat-list-item href="https://codepen.io/martinbjoost" target="_blank">
+        <a
+          mat-list-item
+          href="https://codepen.io/martinbarriaweb"
+          target="_blank"
+        >
           <i class="fab fa-codepen"></i>
-          <p mat-line> Codepen </p>
+          <p mat-line>Codepen</p>
         </a>
       </mat-nav-list>
       <mat-divider></mat-divider>
       <mat-nav-list>
-        
-        <a class="link__contact" mat-list-item [routerLink]="['/contact']" routerLinkActive="active">
+        <a
+          class="link__contact"
+          mat-list-item
+          [routerLink]="['/contact']"
+          routerLinkActive="active"
+        >
           <mat-icon mat-list-icon>
             how_to_reg
           </mat-icon>
-          <p mat-line> Contáctame </p>
+          <p mat-line>Contáctame</p>
         </a>
       </mat-nav-list>
-
     </mat-sidenav>
 
     <!-- Main content -->
@@ -78,5 +101,4 @@
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
-
 </div>

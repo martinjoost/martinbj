@@ -28,7 +28,6 @@ export class SkillsComponent implements OnInit {
       (resp) => {
         this.loading = false;
         if (resp) {
-          localStorage.setItem("item", JSON.stringify(resp));
           this.languages = resp.languages;
           this.othersLibs = resp.othersLibs;
           this.frameworks = resp.frameworks;
